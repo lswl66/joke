@@ -1,0 +1,17 @@
+<!--pages/about/about.wxml-->
+<view class="about">
+  <mp-msg title="爸爸讲段子" icon="/images/headphoto.jpg">
+    <view slot="desc">
+      Version 1.0.0
+    </view>
+    <view slot="extend" class="slot-extend">
+        <view>爸爸讲段子</view>
+        <view>打造亲子教育第一品牌</view>
+        <view>陪伴孩子成长每一步</view>
+        <view></view>
+    </view>
+    <view slot="footer">
+      <view class="weui-footer__text">Copyright © 2019-2023 lswl66</view>
+    </view>
+  </mp-msg>
+</view>

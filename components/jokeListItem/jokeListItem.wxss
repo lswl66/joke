@@ -1,0 +1,79 @@
+/* components/jokeListItem/jokeListItem.wxss */
+.joke-list-item{
+  background-color: #fff;
+  font-size: 15px;
+  padding:8px 15px 0;
+  margin: 6px 0 18px;
+}
+.joke-list-item-head image{
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.head-author{
+  display: inline-block;
+  color: #666;
+  position: relative;
+  top: -10px;
+  font-size: 16px;
+}
+.joke-list-item-body{
+  margin: 5px 0;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.joke-list-item-body image{
+  width: 100%;
+}
+.foot-item{
+  display: inline-block;
+  margin: 5px 20px 0 15px;
+  padding: 2px 0;
+  color: #515151;
+}
+.foot-item image{
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.foot-item-inner{
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+.like{
+  position: relative;
+  top: -2px;
+}
+.haslike{
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  color: #d81e06;
+}
+.comment{
+  position: relative;
+  top: 0px;
+}
+.comment .foot-item-inner{
+  position: relative;
+  top: -5px;
+}
+.collect{
+  position: relative;
+  top: -1px;
+}
+.share{
+  position: relative;
+  top: 5px;
+}
+.share button{
+  background-color: #fff;
+  width: 50px;
+  min-height: 22px;
+  display: inline-block;
+  position: absolute;
+  top: -22px;
+  left: 64px;
+  padding: 0;
+}

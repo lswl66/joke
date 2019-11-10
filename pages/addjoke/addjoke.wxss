@@ -1,0 +1,31 @@
+/* pages/addjoke/addjoke.wxss */
+.addjoke-text{
+  padding: 0 15px;
+}
+.addjoke-text-input{
+  border-radius: 5px;
+  border: 2px solid #d6e6f2;
+  padding: 5px 0 5px 10px;
+  width: 95%;
+}
+.addjoke-label-item{
+  color: #999;
+  font-size: 14px;
+  padding: 2px 5px;
+  display: inline-block;
+  margin: 10px 0 0 15px;
+  border: .5px solid #999;
+  border-radius: 20px;
+}
+.addjoke-label-item-selected{
+  color: #ff5722;
+  font-size: 14px;
+  padding: 2px 5px;
+  display: inline-block;
+  margin: 10px 0 0 15px;
+  border-radius: 20px;
+  border: .5px solid #ff5722;
+}
+.addjoke-submit{
+  margin-top: 50px;
+}

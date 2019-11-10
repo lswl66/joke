@@ -1,0 +1,40 @@
+<!--components/jokeListItem/jokeListItem.wxml-->
+<view class="joke-list-item">
+
+  <view class="joke-list-item-head">
+    <image src="{{jokeInfo.photo}}"/>
+    <view 
+      class="head-author" 
+      bindtap="tomyjoke">{{jokeInfo.author}}</view>
+  </view>
+
+  <view class="joke-list-item-body">
+    <view class="body-inner-text">{{jokeInfo.inner}}</view>
+    <view class="body-inner-image">
+      <image 
+        src="{{jokeInfo.image ? jokeInfo.image : '/images/like.png'}}"/>
+    </view>
+  </view>
+
+  <view class="joke-list-item-foot">
+    <view class="foot-item like" bindtap="tolike">
+      <image src="/images/like1.png" wx:if="{{like === 1}}"/>
+      <image src="/images/like2.png" wx:elif="{{like === 2}}"/>
+      <view class="{{like === 1 ? 'foot-item-inner' : 'haslike'}}">{{jokeInfo.likenum}}</view>
+    </view>
+    <view class="foot-item comment">
+      <image src="/images/comment1.png"/>
+      <view class="foot-item-inner">{{jokeInfo.comment}}</view>
+    </view>
+    <view class="foot-item collect" bindtap="tocollect">
+      <image src="/images/collect1.png" wx:if="{{collect === 1}}"/>
+      <image src="/images/collect2.png" wx:elif="{{collect === 2}}"/>
+    </view>
+    <view class="foot-item share">
+      <button open-type="share">
+        <image src="/images/share.png"/>
+      </button>
+    </view>
+  </view>
+
+</view>

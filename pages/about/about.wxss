@@ -1,0 +1,22 @@
+/* pages/about/about.wxss */
+.about{
+  width: 100vw;
+  overflow: hidden;
+}
+.slot-extend {
+  margin-top: 120rpx;
+  font-size: 34rpx;
+  color: #888;
+}
+
+.slot-extend view {
+  margin: 30rpx 0;
+}
+mp-msg{
+  height: 100vh
+}
+.weui-footer__text{
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}

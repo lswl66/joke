@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "joke-list-item": "/components/jokeListItem/jokeListItem"
+  },
+  "navigationBarTitleText": "我的收藏"
+}

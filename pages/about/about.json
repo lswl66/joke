@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-msg": "/weui/msg/msg"
+  },
+  "navigationBarTitleText": "关于"
+}

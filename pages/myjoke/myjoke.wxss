@@ -1,0 +1,72 @@
+/* pages/myjoke/myjoke.wxss */
+.myjoke{
+  background-color: #fafafa;
+}
+.userInfo-basic{
+  background-color: #3490de;
+  color: #fff;
+  padding: 16px 18px 42px;
+}
+.userInfo-basic image{
+  width: 56px;
+  height: 56px;
+  border-radius: 60px;
+  margin-right: 10px;
+}
+.userInfo-basic-text{
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  top: -16px;
+}
+.userInfo-basic-lv{
+  font-size: 10px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  width: 28px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: 3px;
+}
+.userInfo-score{
+  margin: 15px 15px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  top: -50px;
+}
+.userInfo-score-item{
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+.userInfo-score-total{
+  display: inline-block;
+  background-color: #f6f6f6;
+  height: 10px;
+  width: 30%;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+.userInfo-score-part{
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgb(255,141,13);
+}
+.userInfo-score-num1{
+  display: inline-block;
+  color: #222;
+  margin-right: 10px;
+  width: 45px;
+}
+.userInfo-score-num2{
+  display: inline-block;
+  color: red;
+  margin-left: -2px;
+}
+.jokeList{
+  position: relative;
+  top: -40px;
+}

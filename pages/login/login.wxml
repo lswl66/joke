@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+
+  <view class="bigIcon">
+    <image src="/images/headphoto.jpg"/>
+    <view class="bigIcon-text">
+      <view class="bigIcon-text-name">爸爸讲段子</view>
+      <view class="bigIcon-text-abstract">打造亲子教育第一品牌</view>
+    </view>
+  </view>
+
+  <view class="loginBox">
+    <view class="loginBoxItem">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGotUserInfo">
+        微信登录
+      </button>
+    </view>
+  </view>
+
+</view>

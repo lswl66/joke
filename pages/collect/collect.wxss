@@ -1,0 +1,10 @@
+/* pages/collect/collect.wxss */
+.main{
+  background-color: #fbfbfb;
+}
+.nocollect{
+  text-align: center;
+  color: #999;
+  position: relative;
+  top: 120px;
+}

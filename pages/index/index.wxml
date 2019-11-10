@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="home">
+  <view class="main">
+    <view class="joke-list">
+      <joke-list-item 
+      wx:for="{{jokeInfoList}}"
+      wx:key="this"
+      jokeInfo="{{item}}"></joke-list-item>
+    </view>
+  </view>
+</view>
