@@ -44,7 +44,7 @@ Page({
   onShow: function () {
     console.log('onshow')
     wx.getStorage({
-      key: 'key',
+      key: 'islogin',
       success: (res) => {
         console.log(res.data);
         this.setData({

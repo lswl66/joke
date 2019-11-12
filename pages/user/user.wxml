@@ -3,12 +3,14 @@
 
   <view class="loginBox">
     <view class="loginBoxItem" wx:if="{{isLogin !== 1}}">
-      <navigator url="/pages/login/login">
-        <view class="userphoto">
-          <image src="{{userInfo.avatarUrl}}"/>
-        </view>
-        <view class="tologin">微信登录</view>
-      </navigator>
+      <view class="userphoto">
+        <image src="{{userInfo.avatarUrl}}"/>
+      </view>
+      <view class="tologin">
+        <navigator url="/pages/login/login">
+          微信登录
+        </navigator>
+      </view>
     </view>
     <view class="loginBoxItem" wx:elif="{{isLogin === 1}}">
       <view class="userphoto">

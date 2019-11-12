@@ -38,7 +38,7 @@ Page({
         storageArr.push(this.data.isLogin);
         console.log(storageArr);
         wx.setStorage({
-          key: 'key',
+          key: 'islogin',
           data: JSON.stringify(storageArr),
         });
         wx.navigateBack({

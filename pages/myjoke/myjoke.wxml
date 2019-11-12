@@ -1,5 +1,5 @@
 <!--pages/myjoke/myjoke.wxml-->
-<view class="myjoke">
+<view class="{{isLogin == 1 ? 'myjoke' : 'hide'}}">
   <view class="userInfo">
     <view class="userInfo-basic">
       <image src="{{userInfo.photo}}"/>
@@ -84,5 +84,14 @@
       wx:for="{{jokeInfoList}}"
       wx:key="this"
       jokeInfo="{{item}}"></joke-list-item>
+  </view>
+</view>
+<view class="{{isLogin == 0 ? 'unlogin' : 'hide'}}">
+  <view class="unlogin-text">您还没有登录。。。</view>
+  <view class="unlogin-tologin" bindtap="tologin">
+    去登录
+  </view>
+  <view class="unlogin-toback" bindtap="toback">
+    返回上一页
   </view>
 </view>

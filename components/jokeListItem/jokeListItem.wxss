@@ -30,7 +30,7 @@
 }
 .foot-item{
   display: inline-block;
-  margin: 5px 20px 0 15px;
+  margin: 5px 10px 0 15px;
   padding: 2px 0;
   color: #515151;
   flex: 1;
@@ -70,7 +70,7 @@
 .share{
   position: relative;
   top: 0px;
-  right: -21px;
+  right: -32px;
 }
 .share button{
   background-color: #fff;

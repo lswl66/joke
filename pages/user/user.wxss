@@ -6,7 +6,7 @@
 .loginBox{
   margin: 10px 0 30px;
   background: #fff;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .userphoto{
   text-align: center;
@@ -14,7 +14,7 @@
 .userphoto image{
   width: 60px;
   height: 60px;
-  margin: 10px 0;
+  margin: 10px 0 0;
   border-radius: 4px;
   border: 1rpx solid #999;
 }
@@ -25,6 +25,11 @@
 }
 .tologin{
   text-align: center;
+  width: 75px;
+  margin: 0 auto;
+}
+.tologin navigator{
+  padding: 8px 5px;
 }
 .Item{
   background: #fff;

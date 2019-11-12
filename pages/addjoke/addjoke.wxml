@@ -23,6 +23,7 @@
   </view>
 
   <view class="addjoke-label">
+    <view class="addjoke-label-title">选择标签</view>
     <view 
       wx:for="{{label}}"
       wx:key="{{index}}"

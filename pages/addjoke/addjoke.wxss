@@ -1,21 +1,34 @@
 /* pages/addjoke/addjoke.wxss */
+.addjoke{
+  background-color: #f7f7f7;
+  height: 100vh;
+  font-size: 14px;
+  color: #888;
+}
 .addjoke-text{
-  padding: 0 15px;
+  padding: 15px 15px;
 }
 .addjoke-text-input{
   border-radius: 5px;
-  border: 2px solid #d6e6f2;
+  background-color: #fff;
   padding: 5px 0 5px 10px;
   width: 95%;
+}
+.addjoke-text-title{
+  line-height: 32px;
+}
+.addjoke-label-title{
+  line-height: 32px;
+  padding-left: 15px;
 }
 .addjoke-label-item{
   height: 27px;
   line-height: 27px;
   color: #999;
-  font-size: 14px;
+  font-size: 12px;
   padding: 2px 5px;
   display: inline-block;
-  margin: 10px 0 0 15px;
+  margin: 12px 0px 0 15px;
   border: .5px solid #999;
   border-radius: 20px;
 }
@@ -23,13 +36,23 @@
   height: 27px;
   line-height: 27px;
   color: #ff5722;
-  font-size: 14px;
+  font-size: 12px;
   padding: 2px 5px;
   display: inline-block;
-  margin: 10px 0 0 15px;
+  margin: 12px 0px 0 15px;
   border-radius: 20px;
   border: .5px solid #ff5722;
 }
 .addjoke-submit{
   margin-top: 50px;
+}
+.weui-cells{
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+.weui-cells::before{
+  border-top: none;
+}
+.weui-cells::after{
+  border-bottom: none;
 }

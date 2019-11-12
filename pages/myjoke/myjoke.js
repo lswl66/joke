@@ -92,14 +92,25 @@ Page({
       like: 233,
       collect: 23,
       lv: 2
-    }
+    },
+    isLogin: 0
   },
 
+  tologin: function(){
+    wx.navigateTo({
+      url: '/pages/login/login',
+    })
+  },
+  toback: function(){
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**
@@ -113,7 +124,18 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.getStorage({
+      key: 'islogin',
+      success: (res) => {
+        console.log(res.data);
+        this.setData({
+          isLogin: JSON.parse(res.data)[0]
+        })
+      },
+      fail: (res) => {
+        console.log('fail')
+      }
+    })
   },
 
   /**
