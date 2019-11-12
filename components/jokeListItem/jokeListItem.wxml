@@ -12,7 +12,8 @@
     <view class="body-inner-text">{{jokeInfo.inner}}</view>
     <view class="body-inner-image">
       <image 
-        src="{{jokeInfo.image ? jokeInfo.image : '/images/like.png'}}"/>
+        src="{{jokeInfo.image ? jokeInfo.image : '/images/like.png'}}"
+        mode="widthFix"/>
     </view>
   </view>
 

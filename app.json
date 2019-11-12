@@ -10,7 +10,7 @@
     "pages/collect/collect"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ededed",
     "navigationBarTitleText": "听爸爸讲段子",
     "navigationBarTextStyle": "black"

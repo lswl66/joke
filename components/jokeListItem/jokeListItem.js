@@ -1,4 +1,15 @@
-// components/jokeListItem/jokeListItem.js
+/***************************************************************************************
+ * Copyright           : 2019 - 2022
+ * FileName            : jokeListItem.js
+ * Author              : lswl66
+ * Version             : 1.0.01
+ * Date Of Creation    : 2019/11/11 19:58:00
+ * Description         : 爸爸讲段子
+ *                     :
+ *                     :
+ * Function List       :
+ **************************************************************************************/
+
 Component({
   /**
    * 组件的属性列表

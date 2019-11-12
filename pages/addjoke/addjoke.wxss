@@ -9,6 +9,8 @@
   width: 95%;
 }
 .addjoke-label-item{
+  height: 27px;
+  line-height: 27px;
   color: #999;
   font-size: 14px;
   padding: 2px 5px;
@@ -18,6 +20,8 @@
   border-radius: 20px;
 }
 .addjoke-label-item-selected{
+  height: 27px;
+  line-height: 27px;
   color: #ff5722;
   font-size: 14px;
   padding: 2px 5px;

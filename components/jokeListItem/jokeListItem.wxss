@@ -25,11 +25,15 @@
 .joke-list-item-body image{
   width: 100%;
 }
+.joke-list-item-foot{
+  display: flex;
+}
 .foot-item{
   display: inline-block;
   margin: 5px 20px 0 15px;
   padding: 2px 0;
   color: #515151;
+  flex: 1;
 }
 .foot-item image{
   width: 20px;
@@ -65,15 +69,13 @@
 }
 .share{
   position: relative;
-  top: 5px;
+  top: 0px;
+  right: -21px;
 }
 .share button{
   background-color: #fff;
   width: 50px;
   min-height: 22px;
   display: inline-block;
-  position: absolute;
-  top: -22px;
-  left: 64px;
   padding: 0;
 }
