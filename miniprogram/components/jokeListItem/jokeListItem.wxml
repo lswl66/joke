@@ -1,0 +1,51 @@
+<!--components/jokeListItem/jokeListItem.wxml-->
+<view class="joke-list-item">
+  <view class="joke-list-item-inner joke-list-item-left">
+    <image src="{{jokeInfo.photo}}"/>
+  </view>
+
+  <view class="joke-list-item-inner joke-list-item-right">
+
+    <view class="joke-author">{{jokeInfo.author}}</view>
+
+    <view class="joke-inner">
+
+      <view class="joke-inner-text">{{jokeInfo.inner}}</view>
+
+      <view class="joke-inner-image">
+        <image src="{{jokeInfo.image}}" mode="aspectFill" bindtap="topreviewimage"/>
+      </view>
+
+    </view>
+
+    <view class="joke-foot">
+      <view class="joke-foot-item joke-submitTime">发布于{{jokeInfo.submitTime}}</view>
+      <view class="joke-foot-item joke-more" bindtap="tofold">
+        <image src="/images/more.png"/>
+      </view>
+      <view class="{{fold == 0 ? 'joke-btn-fold': 'joke-btn-unfold'}} joke-foot-item">
+        <view 
+          class="joke-btn-item {{jokeInfo.liked == 0 ? '' : 'touched'}}" 
+          bindtap="tolike">
+          <image src="/images/like1.png" wx:if = "{{jokeInfo.liked == 0}}"/>
+          <image src="/images/like2.png" wx:else/>
+          {{jokeInfo.likednum}}
+        </view>
+        <view 
+          class="joke-btn-item joke-btn-comment"
+          bindtap="tocommit">
+          <image src="/images/comment1.png"/>
+          {{jokeInfo.commentnum}}
+        </view>
+        <view 
+          class="joke-btn-item {{jokeInfo.collected == 0 ? '' : 'touched'}}"
+          bindtap="tocollect">
+          <image src="/images/collect1.png" wx:if = "{{jokeInfo.collected == 0}}"/>
+          <image src="/images/collect2.png" wx:else/>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+

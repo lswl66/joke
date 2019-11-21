@@ -1,0 +1,47 @@
+/* pages/collect/collect.wxss */
+.main{
+  background-color: #fbfbfb;
+}
+.hide{
+  display: none;
+}
+.nocollect{
+  text-align: center;
+  color: #999;
+  position: relative;
+  top: 120px;
+}
+.unlogin{
+  background-color: #fafafa;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.unlogin-text{
+  position: absolute;
+  left: calc(50% - 64px);
+  top: 16%;
+}
+.unlogin-tologin{
+  background: linear-gradient(45deg, rgba(233, 72, 34, 1) 0%, rgba(242, 145, 10, 1) 100%);
+  width: 188px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  position: absolute;
+  left: calc(50% - 96px);
+  top: 55%;
+}
+.unlogin-toback{
+  width: 80px;
+  font-size: 16px;
+  color: #999;
+  border-bottom: .5px solid #999;
+  position: absolute;
+  left: calc(50% - 40px);
+  bottom: 8%;
+}

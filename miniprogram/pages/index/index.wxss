@@ -1,0 +1,6 @@
+.home{
+  overflow: hidden;
+}
+.main{
+  background-color: #fafafa;
+}

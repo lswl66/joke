@@ -1,0 +1,97 @@
+<!--pages/myjoke/myjoke.wxml-->
+<view class="{{isLogin == 1 ? 'myjoke' : 'hide'}}">
+  <view class="userInfo">
+    <view class="userInfo-basic">
+      <image src="{{userInfo.avatarUrl}}"/>
+      <view class="userInfo-basic-text">
+        <view class="userInfo-basic-name">{{userInfo.nickName}}</view>
+        <view class="userInfo-basic-lv">LV{{lv}}</view>
+      </view>
+    </view>
+    <view class="userInfo-score">
+      <view class="userInfo-score-item">
+        被点赞了
+        <view class="userInfo-score-total">
+          <view 
+            class="userInfo-score-part" 
+            style="width:{{liked*100/needliked}}%">
+          </view>
+        </view>
+        <view class="userInfo-score-num1">
+          {{liked}}/{{needliked}}
+        </view>
+        <!-- 超过
+        <view class="userInfo-score-num2">
+          23.3%
+        </view>
+        的爸爸 -->
+      </view>
+      <view class="userInfo-score-item">
+        被收藏了
+        <view class="userInfo-score-total">
+          <view 
+            class="userInfo-score-part" 
+            style="width:{{collected*100/needcollected}}%">
+          </view>
+        </view>
+        <view class="userInfo-score-num1">
+          {{collected}}/{{needcollected}}
+        </view>
+        <!-- 超过
+        <view class="userInfo-score-num2">
+          26.5%
+        </view>
+        的爸爸 -->
+      </view>
+      <view class="userInfo-score-item">
+        讲的段子
+        <view class="userInfo-score-total">
+          <view 
+            class="userInfo-score-part" 
+            style="width:{{jokenum*100/needjoke}}%">
+          </view>
+        </view>
+        <view class="userInfo-score-num1">
+          {{jokenum}}/{{needjoke}}
+        </view>
+        <!-- 超过
+        <view class="userInfo-score-num2">
+          43.8%
+        </view>
+        的爸爸 -->
+      </view>
+      <!-- <view class="userInfo-score-item">
+        综合得分
+        <view class="userInfo-score-total">
+          <view 
+            class="userInfo-score-part" 
+            style="width:92%">
+          </view>
+        </view>
+        <view class="userInfo-score-num1">
+          4.6
+        </view>
+        超过
+        <view class="userInfo-score-num2">
+          53.3%
+        </view>
+        的爸爸
+      </view> -->
+    </view>
+  </view>
+  <view class="jokeList">
+    <joke-list-item 
+      wx:for="{{jokeInfoList}}"
+      wx:key="this"
+      jokeInfo="{{item}}"></joke-list-item>
+  </view>
+</view>
+<view class="{{isLogin == 0 ? 'unlogin' : 'hide'}}">
+  <view class="unlogin-text">您还没有登录。。。</view>
+  <view class="unlogin-tologin" bindtap="tologin">
+    去登录
+  </view>
+  <view class="unlogin-toback" bindtap="toback">
+    返回上一页
+  </view>
+</view>

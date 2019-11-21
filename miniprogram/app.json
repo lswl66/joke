@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addjoke/addjoke",
+    "pages/user/user",
+    "pages/myjoke/myjoke",
+    "pages/login/login",
+    "pages/about/about",
+    "pages/logs/logs",
+    "pages/collect/collect"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ededed",
+    "navigationBarTitleText": "听爸爸讲段子",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#08bf62",
+    "borderStyle": "white",
+    "backgroundColor": "#f8f8f8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/footer-list.png",
+        "selectedIconPath": "/images/footer-list-selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/footer-user.png",
+        "selectedIconPath": "/images/footer-user-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

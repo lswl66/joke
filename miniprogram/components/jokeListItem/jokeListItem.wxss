@@ -1,0 +1,87 @@
+/* components/jokeListItem/jokeListItem.wxss */
+
+.joke-list-item{
+  background-color: #fff;
+  font-size: 15px;
+  padding:8px 15px 0;
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+}
+.joke-list-item-left{
+  width: 42px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.joke-list-item-left image{
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  position: relative;
+  top: 3px;
+}
+.joke-list-item-right{
+  display: inline-block;
+  flex: 1;
+  font-size: 16px;
+}
+.joke-inner-text{
+  margin-bottom: 8px;
+}
+.joke-inner-image image{
+  width: 260px;
+  height: 190px;
+}
+.joke-author{
+  color: rgb(87, 107, 149);
+  position: relative;
+}
+.joke-foot{
+  margin: 3px 0 8px;
+  position: relative;
+}
+.joke-foot-item{
+  display: inline-block;
+}
+.joke-submitTime{
+  font-size: 12px;
+  color: #999;
+}
+.joke-more{
+  position: absolute;
+  top: 2px;
+  right: 1px;
+}
+.joke-more image{
+  width: 34px;
+  height: 24px;
+}
+.joke-btn-fold{
+  display: none;
+}
+.joke-btn-unfold{
+  display: inline-block;
+  position: absolute;
+  height: 41px;
+  line-height: 41px;
+  top: -8px;
+  right: 45px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+.joke-btn-unfold image{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 2px;
+}
+.joke-btn-item{
+  display: inline-block;
+  margin: 0 12px;
+}
+.joke-btn-comment image{
+  position: relative;
+  top: 4px;
+}
+.touched{
+  color: #d81e06;
+}
